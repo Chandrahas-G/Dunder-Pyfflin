@@ -9,7 +9,7 @@ if num > 1:
 if num <=1 or flag:
   print(f"{num} is Not a Prime Number")
 else:
-  print(f"{num} is a Prime Number")
+  print("{} is a Prime Number".format(num))
 
 
 ## Without flags, used 'return' to function instead
