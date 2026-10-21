@@ -1,3 +1,10 @@
+# Shortcut
+a = [2,3,5,8,4,5]
+b = a[::-1]
+  
+print(b)
+
+# Using Loop
 a = [2,3,5,8,4,5]
 b = []
 
