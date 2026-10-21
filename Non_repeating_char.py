@@ -6,6 +6,7 @@ count = Counter(s)
 for char in s:
   if count[char] == 1:
     print(char)
+    break                  # add 'break' to print only First Non-repeating character only
 
 # All Non-Repeating characters
 text = "chandrahas"
@@ -31,7 +32,7 @@ for i in range(len(text)-1, -1, -1):
     print(text[i])
     break                # add 'break' to print only Last Non-repeating character only
 
-# using Counter from collections
+# using Counter from collections    return only last non repeating char
 from collections import Counter
 def non_repeat(s):
   count = Counter(s)
