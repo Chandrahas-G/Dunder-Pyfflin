@@ -1,3 +1,12 @@
+# First Non-Repeating char only
+from collections import Counter
+s = "chandrahas"
+count = Counter(s)
+
+for char in s:
+  if count[char] == 1:
+    print(char)
+
 # All Non-Repeating characters
 text = "chandrahas"
 
