@@ -30,3 +30,14 @@ for i in range(len(text)-1, -1, -1):
   if count == 1:
     print(text[i])
     break                # add 'break' to print only Last Non-repeating character only
+
+# using Counter from collections
+from collections import Counter
+def non_repeat(s):
+  count = Counter(s)
+
+  for char in reversed(s):
+    if count[char] == 1:
+      return char
+
+print(non_repeat("chandrahas"))
