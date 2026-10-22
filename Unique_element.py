@@ -1,3 +1,21 @@
+# With Dictionary
+a = [2, 5, 3, 6, 2, 3]
+freq = {}
+
+for num in a:
+    if num in freq:
+        freq[num] += 1
+    else:
+        freq[num] = 1
+
+print(freq)                # {2: 2, 5: 1, 3: 2, 6: 1}
+
+for num in a:
+    if freq[num] == 1:
+        print(num)
+
+
+# using loops & empty list
 a = [2, 5, 3, 2, 3]
 res = []
 
